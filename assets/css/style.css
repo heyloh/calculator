@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  --primary-color: rgb(74, 5, 153);
+  --primary-color-darker: rgb(47, 9, 92);
+  --button-color-darker: rgb(206, 202, 228);
+}
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  background: var(--primary-color);
+  margin: 0;
+
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+  max-width: 640px;
+
+  border-radius: 10px;
+  background:#fff;
+}
+
+.calculator {
+  width: 400px;
+  margin-bottom: 30px;
+}
+
+.display {
+  font-size: 2em;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(26, 26, 26);
+  text-align: right;
+  width: 100%;
+
+  height: 100px;
+  background: rgb(237, 237, 241);
+  margin-bottom: 10px;
+  padding: 0 20px;
+  border: 2px solid var(--primary-color);
+
+  border-radius: 10px;
+}
+
+.container button {
+  font-size: 1em;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(26, 26, 26);
+  background: rgb(237, 237, 241);
+
+  height: 80px;
+  width: 100%;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border: 2px solid var(--primary-color);
+
+  border-radius: 10px;
+}
+
+.container button:hover {
+  background: var(--button-color-darker);
+}
+
+.container h1 {
+  font-size: 3.5em;
+}
